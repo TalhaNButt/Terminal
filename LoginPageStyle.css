@@ -1,0 +1,24 @@
+
+
+.container{
+    padding-top: 7em;
+}
+
+
+.card{
+    width: 50%;
+    margin-bottom: 3em;
+}
+
+#LoginHeading{
+    font-family: "American Typewriter";
+}
+
+#cardBottom{
+    text-align: center;
+}
+
+#SubmitButton{
+    margin-left: 15em;
+    margin-bottom: 8em;
+}

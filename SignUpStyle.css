@@ -1,0 +1,33 @@
+.container{
+    padding-top: 5em;
+}
+
+.card{
+    width: 50%;
+    margin-bottom: 3em;
+
+}
+
+#cardBottom{
+    text-align: center;
+}
+
+#SignUpHeading{
+    font-family: "American Typewriter";
+}
+
+.row{
+    margin-bottom: 1em;
+}
+
+#SubmitButton{
+    margin-left: 10em;
+    margin-bottom: 8em;
+    width: 50%;
+}
+
+#SignUpText{
+    text-align: center;
+    margin-top: 5em;
+    font-size: small;
+}

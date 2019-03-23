@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffd54f;
+}
+
+#counter {
+    color: #333;
+    text-align: center;
+}
+
+#head h1 {
+    font-weight: normal;
+}
+
+#counter li {
+    display: inline-block;
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+}
+
+#counter li span {
+    display: block;
+    font-size: 4.5rem;
+}

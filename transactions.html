@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transactions</title>
+    <link rel="stylesheet" href="userProfileStyle.css">
+    <link rel="stylesheet" href="transactionsStyle.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" rel="stylesheet">
+
+    <style>
+        body{
+            background-color: whitesmoke;
+        }
+    </style>
+
+</head>
+
+
+<body>
+<!-- NavBar -->
+<nav  id="Above" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <a><img src="imgTitle.png" alt="brandImage" class="navbar-brand" style="width: 20px"></a>
+    <a><img src="Irtiqa-sm.png" alt="brandImageLetters" class="navbar-brand" style="float:left;width:30%"></a>
+
+    <a id="Sign" href="titlePage.php" style="float: right;width: 7%; color: whitesmoke">Logout </a>
+
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+<!--Second Navbar-->
+<nav id="Below" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul id="navbar2" class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="Donationrequests.php" style="color: whitesmoke">Donate</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="color: whitesmoke">Why Us?</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="color: whitesmoke">Our Benefactors</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<div class="container emp-profile">
+    <form method="post">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="profile-img">
+                    <img src="ayar.jpg" alt="AyerBro" style="width: 40%;"/>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="profile-head">
+                    <h5>
+                        WinGopal Ayar
+                    </h5>
+                    <h6>
+                        Student
+                    </h6>
+                    <p class="proile-rating">RANKINGS : <span>8/10</span></p>
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="userProfile.php" role="tab" aria-controls="profile" aria-selected="false">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="log.html" role="tab" aria-controls="home" aria-selected="false">Log</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="transactions.html" role="tab" aria-controls="profile" aria-selected="true">Transactions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="feedback.php" role="tab" aria-controls="profile" aria-selected="false">Feedback</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <a href="editProfile.php"><button type="button" class="btn btn-primary">Edit Profile</button></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="profile-work">
+                    <p>FIND DONORS AROUND YOU</p>
+                    <a href="donors.php"><img src="donors.png" alt="donors image" style="width:50%;"></a>
+
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="tab-content profile-tab" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="row">
+                            <div class="container">
+                            <h2>Transactions Information</h2>
+                            <div class="row">
+
+                                <div class="col-md-12 col-lg-12">
+                                    <div id="tracking-pre"></div>
+                                    <div id="tracking">
+                                        <div class="text-center tracking-status-intransit">
+                                            <p class="tracking-status text-tight">Transactions</p>
+                                        </div>
+
+                                        <div class="tracking-list">
+                                            <div class="tracking-item">
+                                                <div class="tracking-icon status-intransit">
+                                                    <svg class="svg-inline--fa fa-circle fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                                        <path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path>
+                                                    </svg>
+                                                    <!-- <i class="fas fa-circle"></i> -->
+                                                </div>
+                                                <div class="tracking-date">Sep 01, 2018<span>03:10 PM</span></div>
+                                                <div class="tracking-content">Hamza Laghari<span>Mandi Bahaudin, Lahore</span></div>
+                                            </div>
+
+                                            <div class="tracking-item">
+                                                <div class="tracking-icon status-intransit">
+                                                    <svg class="svg-inline--fa fa-circle fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                                        <path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path>
+                                                    </svg>
+                                                    <!-- <i class="fas fa-circle"></i> -->
+                                                </div>
+                                                <div class="tracking-date">Nov 10, 2018<span>12:10 AM</span></div>
+                                                <div class="tracking-content">Ghazanfar Abbas<span>Mall Road, Lahore</span></div>
+                                            </div>
+
+                                            <div class="tracking-item">
+                                                <div class="tracking-icon status-inforeceived">
+                                                    <svg class="svg-inline--fa fa-clipboard-list fa-w-12" aria-hidden="true" data-prefix="fas" data-icon="clipboard-list" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg="">
+                                                        <path fill="currentColor" d="M336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM96 424c-13.3 0-24-10.7-24-24s10.7-24 24-24 24 10.7 24 24-10.7 24-24 24zm0-96c-13.3 0-24-10.7-24-24s10.7-24 24-24 24 10.7 24 24-10.7 24-24 24zm0-96c-13.3 0-24-10.7-24-24s10.7-24 24-24 24 10.7 24 24-10.7 24-24 24zm96-192c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm128 368c0 4.4-3.6 8-8 8H168c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16zm0-96c0 4.4-3.6 8-8 8H168c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16zm0-96c0 4.4-3.6 8-8 8H168c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16z"></path>
+                                                    </svg>
+                                                    <!-- <i class="fas fa-clipboard-list"></i> -->
+                                                </div>
+                                                <div class="tracking-date">Dec 06, 2018<span>4:02 PM</span></div>
+                                                <div class="tracking-content">Hamid Meer<span>Bara Dari, Lahore</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>Experience</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <p>Expert</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>Hourly Rate</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <p>10$/hr</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>Total Projects</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <p>230</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>English Level</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <p>Expert</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>Availability</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <p>6 months</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label>Your Bio</label><br/>
+                                    <p>Your detail description</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>

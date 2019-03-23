@@ -1,0 +1,86 @@
+div{
+}
+
+#Sign{
+    color: white;
+    text-decoration: underline;
+}
+
+a:hover {
+    background-color: darkslategrey;
+}
+
+.title>img{
+    float: left;
+    width: 10%;
+}
+
+.title>h1{
+    font-family: "American Typewriter";
+    float: right;
+}
+
+.title>p{
+    text-align: justify;
+}
+
+.row{
+    padding-bottom: 2em;
+}
+
+.nav>form-inline{
+    float: right;
+}
+
+#Above{
+    border-bottom: 2px solid black;
+}
+
+#Below{
+    padding-top: 1em;
+}
+
+.ImageMain{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-top: 5em;
+}
+
+.MainHeading{
+    padding-top: 3em;
+}
+
+#BtnMain1{
+    display: inline;
+    margin-left: 35%;
+    width: 30%;
+    background-color: red;
+}
+
+#BtnMain2{
+    width: 30%;
+}
+
+#cardGroup{
+    margin: 5em;
+}
+
+.card-body,.card-header{
+    border: 2px darkslategrey;
+
+}
+
+
+#footer{
+    background-color: darkgrey;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    color: white;
+    text-align: center;
+}
+
+
